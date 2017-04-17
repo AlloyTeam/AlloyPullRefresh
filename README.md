@@ -11,6 +11,7 @@
 ## 示例
 <img src="https://oc5n93kni.qnssl.com/pullrefresh3.gif"/>
 [在线示例](https://alloyteam.github.io/AlloyPullRefresh/demo/alloyrefresh.html)
+
 ## 使用方法
 
 ### react
