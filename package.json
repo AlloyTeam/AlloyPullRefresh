@@ -1,0 +1,19 @@
+{
+  "name": "alloypullrefresh",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlloyTeam/AlloyPullRefresh.git"
+  },
+  "author": "lvming",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlloyTeam/AlloyPullRefresh/issues"
+  },
+  "homepage": "https://github.com/AlloyTeam/AlloyPullRefresh#readme"
+}

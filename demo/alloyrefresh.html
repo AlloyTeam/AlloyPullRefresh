@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>AlloyPullRefresh</title>
+
+    <link rel="stylesheet" type="text/css" href="../src/zepto/pullRefresh.css">
+    <link rel="stylesheet" type="text/css" href="http://pub.idqqimg.com/qqun/xiaoqu/mobile/css/buluoindex.min.6063d1bd.css">
+    <link rel="stylesheet" type="text/css" href="http://pub.idqqimg.com/qqun/xiaoqu/mobile/css/common.min.0b3cfaee.css">
+    <style type="text/css">
+      html,body {
+        background-color: #f8f8f8 !important;
+      }
+      * {
+        padding: 0;
+        margin: 0;
+      }
+
+    </style>
+</head>
+<body>
+
+<div class="tuijian-container" id="container">
+  <div class="pull-down-content">
+    <div id="arrowIcon"></div>
+    <div id="pullIcon" class="spinner" style="display: none;"></div>
+    <span id="pullText">刷新成功</span>
+  </div>
+  <div id="wrapper" class="wrapper ">
+    <ul id="recommend-hot-list" class="ul recommend-hot-list">
+        
+    </ul>
+  </div>
+</div>
+<script type="text/javascript" src="../src/zepto/pullRefresh.js"></script>
+<script type="text/javascript" src="https://pub.idqqimg.com/qqun/xiaoqu/mobile/js/zepto.min.da61d250.js"></script>
+<script type="text/javascript">
+    var str = '<li class="border-1px-down feeds-li feeds-li-normal"><div class="detail-bottom"><div class="title-content"><p class="grouptitle feed-two-line">＃回眸一笑＃别人回眸一笑百媚生，我回眸一笑吓掉魂</p></div><div class="img-wrap clearfix" style="display: block; width: 300px;"><div class="feed-img img-ph" style="width: 96.6667px; height: 77.957px; margin-right: 5px;"><img src="https://gpic.qpic.cn/gbar_pic/XxEHVUhibImuLQ6BS9qA8mhLfrsxPNzwwUfRaGlDic2XUdhjD3trR69Q/320" class="" style="margin-left: 0px; margin-top: -35.8678px; width: 96.6667px; height: 171.852px;"></div><div class="feed-img img-ph" style="width: 96.6667px; height: 77.957px; margin-right: 5px;"><img src="https://gpic.qpic.cn/gbar_pic/XxEHVUhibImuLQ6BS9qA8mh7lUs52jcU2so042nZ57dKJY2a2pNMXuQ/320" class="" style="margin-left: 0px; margin-top: -35.8678px; width: 96.6667px; height: 171.852px;"></div><div class="feed-img img-ph" style="width: 96.6667px; height: 77.957px;"><div class="img-cover"></div><img src="https://gpic.qpic.cn/gbar_pic/XxEHVUhibImuLQ6BS9qA8mqTP3Mb96zBQgQgt5dRib7q5MnQUiajrE4og/320" class="" style="margin-left: 0px; margin-top: -35.8678px; width: 96.6667px; height: 171.852px;"><span class="total-img"><span class="total-img-text">+</span><!-- react-text: 94 -->5<!-- /react-text --></span></div></div><div class="clearfix post-bottom-v4"><div class="bottom-inner-v4"><img src="https://p.qlogo.cn/stranger/Ik8ZsqWZG8xaLhFn4YKeGIW8ib2NV6d15/140" class="item-user-avatar-v4"><div class="item-user-name-v4">阳阳这女子</div><div class="item-like-icon-v4"></div><div class="item-like-count-v4">1035</div><div class="item-reply-icon-v4"></div><div class="item-reply-count-v4">608</div></div><div class="item-user-tag-v4-ios" style="margin-right: -3px;"><div class="item-user-barname-v4">自拍</div></div><div class="item-more-v4"></div></div></div></li><li class="border-1px-down feeds-li feeds-li-video"><div class="detail-bottom"><div class="title-content"><p class="grouptitle feed-two-line">手游史上最像英雄联盟的游戏</p></div><div class="VideoComponent img-wrap clearfix"><div id="iq03792r3ks0" data-bid="297721" data-pid="8433550-1492017240" data-idprevfix="i" data-vid="q03792r3ks0" class="video-item-player" style="width: 300px; height: 168px;"><div class="preview-c" style="width: 300px; height: 168px;"><span class="btn-play"></span><img data-nosize="cW:300&amp;cH:168" src="https://puui.qpic.cn/qqvideo/0/q03792r3ks0/0" style="width: 300px; height: 168.75px; margin-left: 0px; margin-top: -0.2865px;"></div></div></div><div class="clearfix post-bottom-v4"><div class="bottom-inner-v4"><img src="https://q.qlogo.cn/g?b=qq&amp;k=hOWjENgoUfibOVX3wVwQNAQ&amp;s=100" class="item-user-avatar-v4"><div class="item-user-name-v4">各种逗比狗</div><div class="item-like-icon-v4"></div><div class="item-like-count-v4">7</div><div class="item-reply-icon-v4"></div><div class="item-reply-count-v4">8</div></div><div class="item-user-tag-v4-ios" style="margin-right: -3px;"><div class="item-user-barname-v4">手游</div></div><div class="item-more-v4"></div></div></div></li>';
+    var json = [{
+        title: '主人在柴犬面前吃泡面，柴犬装矜持不为所动！',
+        desc: '这是一段测试文字',
+        avatar: 'https://q.qlogo.cn/g?b=qq&k=PkRykogDQGpZ6dXkT5t9Fg&s=100'
+    },{
+        title: '主人在柴犬面前吃泡面，柴犬装矜持不为所动！',
+        desc: '这是一段测试文字',
+        avatar: 'https://q.qlogo.cn/g?b=qq&k=PkRykogDQGpZ6dXkT5t9Fg&s=100'
+    },{
+        title: '主人在柴犬面前吃泡面，柴犬装矜持不为所动！',
+        desc: '这是一段测试文字',
+        avatar: 'https://q.qlogo.cn/g?b=qq&k=PkRykogDQGpZ6dXkT5t9Fg&s=100'
+    },{
+        title: '主人在柴犬面前吃泡面，柴犬装矜持不为所动！',
+        desc: '这是一段测试文字',
+        avatar: 'https://q.qlogo.cn/g?b=qq&k=PkRykogDQGpZ6dXkT5t9Fg&s=100'
+    }];
+    var ul = $('.ul');
+    for (var i = 0 ; i < 15 ; i++) {
+        ul.append(str)
+    }
+    window.addEventListener('scroll', function(){
+        var preLoadDis = '0.2';
+        var offsetHeight = window.innerHeight,
+            scrollHeight = document.body.scrollHeight,
+            scrollTop = document.body.scrollTop;
+
+
+        if (parseInt(preLoadDis) != preLoadDis) { // 如果是小数 则为百分比距离
+            preLoadDis = scrollHeight * preLoadDis;
+        }
+
+        if ((scrollTop + offsetHeight) >= scrollHeight - preLoadDis) {
+
+            for (var i = 0 ; i < 5 ; i++) {
+                ul.append(str)
+            }
+
+            
+        }
+
+    });
+
+    AlloyPullRefresh.init({
+      container: '#container'
+    });
+</script>
+
+</body>
+</html>
