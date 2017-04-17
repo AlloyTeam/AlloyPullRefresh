@@ -9,10 +9,9 @@
 * 支持zepto版本和react版本
 
 ## 示例
-<img src="https://oc5n93kni.qnssl.com/pullrefresh3.gif">
+<img src="https://oc5n93kni.qnssl.com/pullrefresh3.gif"/>
 <br>
-您可以下载代码在demo文件夹中找到例子或者
-[在线示例](https://alloyteam.github.io/AlloyPullRefresh/demo/alloyrefresh.html)
+您可以下载代码在demo文件夹中找到例子或者[在线示例](https://alloyteam.github.io/AlloyPullRefresh/demo/alloyrefresh.html)
 
 ## 使用方法
 
