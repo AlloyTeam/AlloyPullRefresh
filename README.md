@@ -13,8 +13,9 @@
 
 ## 使用方法
 
-##＃ react
+### react
 ```
+
 var PullRefresh  = require('.PullRefresh/PullRefresh.jsx');
 
 var PostListItem = React.createClass({
@@ -28,11 +29,17 @@ var PostListItem = React.createClass({
 	}
 });
 
+
 ```
 ### zepto
 ```
+
 <script type="text/javascript" src="../src/zepto/pullRefresh.js"></script>
 <link rel="stylesheet" type="text/css" href="../src/zepto/pullRefresh.css">
+
+
+
+
 <div class="tuijian-container" id="container">
   <div class="pull-down-content">
     <div id="arrowIcon"></div>
@@ -45,6 +52,8 @@ var PostListItem = React.createClass({
     </ul>
   </div>
 </div>
+
+
 
 <script type="text/javascript">
 	
