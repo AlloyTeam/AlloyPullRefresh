@@ -9,12 +9,13 @@
 * 支持zepto版本和react版本
 
 ## 示例
-<img src="https://oc5n93kni.qnssl.com/pullrefresh3.gif"/>
+
 [在线示例](https://alloyteam.github.io/AlloyPullRefresh/demo/alloyrefresh.html)
+<img src="https://oc5n93kni.qnssl.com/pullrefresh3.gif"/>
 
 ## 使用方法
 
-### react
+### react版本
 
 ```javascript
 
@@ -33,7 +34,7 @@ var PostListItem = React.createClass({
 
 
 ```
-### zepto
+### zepto版本
 ```html
 
 <script type="text/javascript" src="../src/zepto/pullRefresh.js"></script>
