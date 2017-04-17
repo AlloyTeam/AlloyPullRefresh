@@ -10,9 +10,8 @@
 
 ## 示例
 
-[在线示例](https://alloyteam.github.io/AlloyPullRefresh/demo/alloyrefresh.html)
-<br>
 <img src="https://oc5n93kni.qnssl.com/pullrefresh3.gif"/>
+<img src="https://oc5n93kni.qnssl.com/1492435681.png"/>
 
 ## 使用方法
 
