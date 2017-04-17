@@ -11,12 +11,14 @@
 ## 示例
 <img src="https://oc5n93kni.qnssl.com/pullrefresh3.gif">
 <br>
-您可以下载代码在demo文件夹中找到例子或者[在线示例](https://alloyteam.github.io/AlloyPullRefresh/demo/alloyrefresh.html)
+您可以下载代码在demo文件夹中找到例子或者
+[在线示例](https://alloyteam.github.io/AlloyPullRefresh/demo/alloyrefresh.html)
 
 ## 使用方法
 
 ### react
-```
+
+```javascript
 
 var PullRefresh  = require('.PullRefresh/PullRefresh.jsx');
 
@@ -34,7 +36,7 @@ var PostListItem = React.createClass({
 
 ```
 ### zepto
-```
+```html
 
 <script type="text/javascript" src="../src/zepto/pullRefresh.js"></script>
 <link rel="stylesheet" type="text/css" href="../src/zepto/pullRefresh.css">
